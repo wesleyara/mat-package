@@ -60,8 +60,8 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 <h2>Desenvolvedor</h2>
 
-|| [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@Wesleyara</sub>](https://github.com/wesleyara)
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@Wesleyara</sub>](https://github.com/wesleyara)
+| --------------------------------------------------------------------------------------------------------------------------------------------- | 
 
 <br>
 
