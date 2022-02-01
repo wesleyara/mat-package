@@ -1,5 +1,6 @@
-const creator = require("./modules/creator");
-const operacoesBasicas = require("./modules/operacoesBasicas");
-const area = require("./modules/area");
+const config = require("./modules/Config/config");
+const operacoesBasicas = require("./modules/Operacoes/operacoesBasicas");
+const geometria = require("./modules/Geometria/geometria");
+const math = require("./modules/Math/math");
 
-module.exports = { ...creator, ...operacoesBasicas, ...area };
+module.exports = { ...config, ...operacoesBasicas, ...geometria, ...math };

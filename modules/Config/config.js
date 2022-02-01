@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const creat = {
+const create = {
   config: () => {
     fs.writeFile("./guide.txt", "Creator", (err) => {
       if (err) {
@@ -10,4 +10,4 @@ const creat = {
   },
 };
 
-module.exports = creat;
+module.exports = create;
