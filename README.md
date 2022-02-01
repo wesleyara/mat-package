@@ -30,7 +30,7 @@ Para utilizar este pacote, basta digitar o seguinte código no terminal dentro d
 <br>
 
 ```
-npm
+npm install https://github.com/wesleyara/mat-package
 ```
 <br>
 
@@ -39,14 +39,30 @@ npm
 Para utilizar o pacote no node.js:
 
 ```
-const Mat = require("mat-package");
+const mat = require("mat-package");
+mat.config();
 ```
 
 Para utilizar em projetos React:
 
 ```
-import Mat from "mat-package";
+import mat from "mat-package";
 ```
+<br>
+
+<!-- LICENSE -->
+
+<h2>Licença</h2>
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+
+<!-- CONTACT -->
+
+<h2>Desenvolvedor</h2>
+
+|| [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@Wesleyara</sub>](https://github.com/wesleyara)
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+
 <br>
 
 <h2 id="metodos">Métodos e funções:</h2>
