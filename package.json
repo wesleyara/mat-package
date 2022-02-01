@@ -1,0 +1,16 @@
+{
+  "name": "mat-package",
+  "version": "1.0.0",
+  "description": "Pacote com funções para cálculos matemáticos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "package",
+    "matematica",
+    "nodejs"
+  ],
+  "author": "Wesley Araújo",
+  "license": "MIT"
+}
