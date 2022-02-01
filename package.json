@@ -12,5 +12,8 @@
     "nodejs"
   ],
   "author": "Wesley Araújo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.14"
+  }
 }
