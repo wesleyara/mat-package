@@ -7,6 +7,8 @@
 <a href="#importancia"><li>Importância</li></a>
 <a href="#instalacao"><li>Instalação</li></a>
 <a href="#utilizacao"><li>Utilização</li></a>
+<a href="#licenca"><li>Licença</li></a>
+<a href="#desenvolvedor"><li>Desenvolvedor</li></a>
 <a href="#metodos"><li>Métodos e funções</li></a>
 </ul>
 <br>
@@ -52,13 +54,13 @@ import mat from "mat-package";
 
 <!-- LICENSE -->
 
-<h2>Licença</h2>
+<h2 id="licenca">Licença</h2>
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 <!-- CONTACT -->
 
-<h2>Desenvolvedor</h2>
+<h2 id="desenvolvedor" >Desenvolvedor</h2>
 
 | [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@Wesleyara</sub>](https://github.com/wesleyara)
 | --------------------------------------------------------------------------------------------------------------------------------------------- | 
