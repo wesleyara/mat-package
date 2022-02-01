@@ -1,13 +1,11 @@
 const fs = require("fs");
 
-const create = {
+module.exports = {
   config: () => {
-    fs.writeFile("./guide.txt", "Creator", (err) => {
+    fs.writeFile("./guide.txt", "Creator", (err: string) => {
       if (err) {
         throw err;
       }
     });
   },
 };
-
-module.exports = create;
