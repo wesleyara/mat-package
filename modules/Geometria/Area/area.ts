@@ -24,5 +24,3 @@ module.exports = {
     return ((baseMaior + baseMenor) / 2) * altura;
   },
 };
-
-
