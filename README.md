@@ -1,7 +1,7 @@
 <h1>MAT-PACKAGE</h1>
 
 <h2>Sumário:</h2>
-  <ol>
+   <ol>
     <a href="#descricao">
       <li>Descrição</li>
     </a>
@@ -29,6 +29,18 @@
           <ul style="list-style-type: disc;">
             <a href="operacoesB">
               <li>Operações Básicas</li>
+            </a>
+          </ul>
+        </li>
+      </a>
+      <a href="#geometria">
+        <li>Geometria
+          <ul style="list-style-type: disc;">
+            <a href="#area">
+              <li>Área</li>
+            </a>
+            <a href="#perimetro">
+              <li>Perimetro</li>
             </a>
           </ul>
         </li>
@@ -103,11 +115,11 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
  Os parametros contidos nos métodos serão, em sua grande maioria, do tipo number, salve os casos que será necessário utilizar arrays para realizar o cálculo, porém sempre será especificado quando necessário.
 
 <br>
-<h3 id="operacoes">Operações:</h3>
+<h2 id="operacoes">Operações:</h2>
 Todos parametros dessã seção são do tipo number.
 
 <br>
-<h4 id="operacoesB">Operações básicas:</h4>
+<h3 id="operacoesB">Operações básicas:</h3>
 
 <br>
 Soma
@@ -144,4 +156,124 @@ mat.divisao(n1, n2);
 // ------------------------------------------------
 mat.divisao(10, 2);
 // 5
+```
+
+<br>
+<h2 id="geometria">Geometria:</h2>
+Todos parametros dessã seção são do tipo number.
+
+<br>
+<h3 id="area">Área:</h3>
+
+<br>
+Área do quadrado
+
+```js
+mat.areaQuadrado(lado);
+// ------------------------------------------------
+mat.areaQuadrado(5);
+// 25
+```
+
+Área do retângulo
+
+```js
+mat.areaRetangulo(lado, altura);
+// ------------------------------------------------
+mat.areaRetangulo(4, 10);
+// 40
+```
+
+Área do triângulo
+
+```js
+mat.areaTriangulo(base, altura);
+// ------------------------------------------------
+mat.areaTriangulo(5, 6);
+// 15
+```
+
+Área do circulo
+
+```js
+mat.areaCirculo(raio);
+// ------------------------------------------------
+mat.areaCirculo(5);
+// 78
+```
+
+Área do paralelogramo
+
+```js
+mat.areaParalelogramo(base, altura);
+// ------------------------------------------------
+mat.areaParalelogramo(5, 6);
+// 30
+```
+
+Área do trapézio
+
+```js
+mat.areaTrapezio(baseMaior, baseMenor, altura);
+// ------------------------------------------------
+mat.areaTrapezio(6, 5, 10);
+// 55
+```
+
+<br>
+<h3 id="perimetro">Perimetro:</h3>
+
+<br>
+Perimetro do quadrado
+
+```js
+mat.perimetroQuadrado(lado);
+// ------------------------------------------------
+mat.perimetroQuadrado(5);
+// 20
+```
+
+Perimetro do retângulo
+
+```js
+mat.perimetroRetangulo(lado, altura);
+// ------------------------------------------------
+mat.perimetroRetangulo(2, 6);
+// 16
+```
+
+Perimetro do triângulo
+
+```js
+mat.perimetroTriangulo(lado);
+// ------------------------------------------------
+mat.perimetroTriangulo(6);
+// 18
+```
+
+Perimetro do circulo
+
+```js
+mat.perimetroCirculo(raio);
+// ------------------------------------------------
+mat.perimetroCirculo(3);
+// 19
+```
+
+Perimetro do paralelogramo
+
+```js
+mat.perimetroParalelogramo(ladoMenor, ladoMaior);
+// ------------------------------------------------
+mat.perimetroParalelogramo(3, 6);
+// 18
+```
+
+Perimetro do trapézio
+
+```js
+mat.perimetroTrapezio(ladoA, ladoB, ladoC, ladoD);
+// ------------------------------------------------
+mat.perimetroTrapezio(2, 3, 2, 4);
+// 11
 ```
