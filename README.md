@@ -251,10 +251,10 @@ mat.areaTrapezio(6, 5, 10);
 ```
 
 <br>
-<h3 id="perimetro">Perimetro:</h3>
+<h3 id="perimetro">Perímetro:</h3>
 
 <br>
-Perimetro do quadrado
+Perímetro do quadrado
 
 ```js
 mat.perimetroQuadrado(lado);
@@ -263,7 +263,7 @@ mat.perimetroQuadrado(5);
 // 20
 ```
 
-Perimetro do retângulo
+Perímetro do retângulo
 
 ```js
 mat.perimetroRetangulo(lado, altura);
@@ -272,7 +272,7 @@ mat.perimetroRetangulo(2, 6);
 // 16
 ```
 
-Perimetro do triângulo
+Perímetro do triângulo
 
 ```js
 mat.perimetroTriangulo(lado);
@@ -281,7 +281,7 @@ mat.perimetroTriangulo(6);
 // 18
 ```
 
-Perimetro do circulo
+Perímetro do circulo
 
 ```js
 mat.perimetroCirculo(raio);
@@ -290,7 +290,7 @@ mat.perimetroCirculo(3);
 // 19
 ```
 
-Perimetro do paralelogramo
+Perímetro do paralelogramo
 
 ```js
 mat.perimetroParalelogramo(ladoMenor, ladoMaior);
@@ -299,7 +299,7 @@ mat.perimetroParalelogramo(3, 6);
 // 18
 ```
 
-Perimetro do trapézio
+Perímetro do trapézio
 
 ```js
 mat.perimetroTrapezio(ladoA, ladoB, ladoC, ladoD);
@@ -334,7 +334,7 @@ mat.modulo(-50);
 // -50
 ```
 
-Raiz cubica
+Raiz cúbica
 
 ```js
 mat.raizCubica(numero);
@@ -343,7 +343,7 @@ mat.raizCubica(8);
 // 2
 ```
 
-Potencia
+Potência
 
 ```js
 mat.potencia(numero, expoente);
