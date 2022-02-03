@@ -1,7 +1,7 @@
 module.exports = {
   // Perímetro de figuras geométricas
   perimetroCirculo: (raio: number) => {
-    return 2 * Math.PI * raio;
+    return Math.round(2 * Math.PI * raio);
   },
 
   perimetroTriangulo: (lado: number) => {

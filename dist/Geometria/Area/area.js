@@ -11,7 +11,7 @@ module.exports = {
         return (base * altura) / 2;
     },
     areaCirculo: (raio) => {
-        return Math.PI * Math.pow(raio, 2);
+        return Math.round(Math.PI * Math.pow(raio, 2));
     },
     areaParalelogramo: (base, altura) => {
         return base * altura;
