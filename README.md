@@ -63,6 +63,18 @@
           </ul>
         </li>
       </a>
+      <a href="#media">
+        <li>Média
+          <ul style="list-style-type: disc;">
+            <a href="#mediaArit">
+              <li>Média aritmética</li>
+            </a>
+            <a href="#mediaPond">
+              <li>Média ponderada</li>
+            </a>
+          </ul>
+        </li>
+      </a>
     </ul>
   </ol>
 <br>
@@ -398,4 +410,34 @@ mat.eqSegGrauFra(a, b, c);
 // ------------------------------------------------
 mat.eqSegGrauFra(1, -5, 6);
 // [ '6/2', '4/2' ]
+```
+
+<br>
+<h2 id="media">Média:</h2>
+Nesta seção iremos utilizar arrays como parametros, é válido ressaltar que média tratamos de diversos valores, por isso essa abordagem com arrays.
+
+<br>
+<h3 id="mediaArit">Média aritimética:</h3>
+
+<br>
+Utilize arrays como parametros
+
+```js
+const notas = [ 10, 8, 7, 8 ];
+
+mat.media(notas);
+// 8.25
+```
+
+<h3 id="mediaPond">Média ponderada:</h3>
+
+<br>
+Utilize arrays como parametros
+
+```js
+const notas = [ 10, 8, 7, 8 ];
+const pesos = [ 1, 2, 1, 3 ];
+
+mat.mediaPonderada(notas, pesos);
+// 8.14
 ```
