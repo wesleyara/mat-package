@@ -1,7 +1,11 @@
 module.exports = {
   // Funções math
-  exponencial: () => {
+  numeroEuler: () => {
     return Math.E;
+  },
+
+  exponencial: (numero: number) => {
+    return Math.exp(numero);
   },
 
   raizQuadrada: (numero: number) => {

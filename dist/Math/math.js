@@ -1,8 +1,11 @@
 "use strict";
 module.exports = {
     // Funções math
-    exponencial: () => {
+    numeroEuler: () => {
         return Math.E;
+    },
+    exponencial: (numero) => {
+        return Math.exp(numero);
     },
     raizQuadrada: (numero) => {
         return Math.sqrt(numero);
