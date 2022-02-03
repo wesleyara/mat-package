@@ -1,7 +1,7 @@
 <h1>MAT-PACKAGE</h1>
 
 <h2>Sumário:</h2>
-   <ol>
+  <ol>
     <a href="#descricao">
       <li>Descrição</li>
     </a>
@@ -41,6 +41,15 @@
             </a>
             <a href="#perimetro">
               <li>Perimetro</li>
+            </a>
+          </ul>
+        </li>
+      </a>
+      <a href="#mathF">
+        <li>Funções Math
+          <ul style="list-style-type: disc;">
+            <a href="#math">
+              <li>Math</li>
             </a>
           </ul>
         </li>
@@ -116,7 +125,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 <br>
 <h2 id="operacoes">Operações:</h2>
-Todos parametros dessã seção são do tipo number.
+Todos parametros dessa seção são do tipo number.
 
 <br>
 <h3 id="operacoesB">Operações básicas:</h3>
@@ -160,7 +169,7 @@ mat.divisao(10, 2);
 
 <br>
 <h2 id="geometria">Geometria:</h2>
-Todos parametros dessã seção são do tipo number.
+Todos parametros dessa seção são do tipo number.
 
 <br>
 <h3 id="area">Área:</h3>
@@ -276,4 +285,82 @@ mat.perimetroTrapezio(ladoA, ladoB, ladoC, ladoD);
 // ------------------------------------------------
 mat.perimetroTrapezio(2, 3, 2, 4);
 // 11
+```
+
+<br>
+<h2 id="mathF">Funções Math:</h2>
+Todos parametros dessa seção são do tipo number.
+
+<br>
+<h3 id="math">Math:</h3>
+
+<br>
+Raiz quadrada
+
+```js
+mat.raizQuadrada(numero);
+// ------------------------------------------------
+mat.raizQuadrada(25);
+// 5
+```
+
+Módulo
+
+```js
+mat.modulo(numero);
+// ------------------------------------------------
+mat.modulo(-50);
+// -50
+```
+
+Raiz cubica
+
+```js
+mat.raizCubica(numero);
+// ------------------------------------------------
+mat.raizCubica(8);
+// 2
+```
+
+Potencia
+
+```js
+mat.potencia(numero, expoente);
+// ------------------------------------------------
+mat.potencia(4, 2);
+// 16
+```
+
+Número aleatório
+
+```js
+mat.numeroAleatorio(valorMáximo);
+// ------------------------------------------------
+mat.potencia(10);
+// retorna um número aleatório entre 0 e 10
+```
+
+Arredondar
+
+```js
+mat.potencia(numero);
+// ------------------------------------------------
+mat.potencia(1.56);
+// 2
+```
+
+Número de Euler
+
+```js
+mat.numeroEuler();
+// 2.7182...
+```
+
+Exponencial
+
+```js
+mat.exponencial(numero);
+// ------------------------------------------------
+mat.exponencial(3);
+// 20.0855...
 ```
