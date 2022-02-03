@@ -9,7 +9,3 @@
 # prettier
 
 .prettierrc.json
-
-#dist
-
-/dist
