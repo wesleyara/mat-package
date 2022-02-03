@@ -54,6 +54,15 @@
           </ul>
         </li>
       </a>
+      <a href="#equacoes">
+        <li>Equações
+          <ul style="list-style-type: disc;">
+            <a href="#equacoesSegundo">
+              <li>Equações do 2° grau</li>
+            </a>
+          </ul>
+        </li>
+      </a>
     </ul>
   </ol>
 <br>
@@ -363,4 +372,30 @@ mat.exponencial(numero);
 // ------------------------------------------------
 mat.exponencial(3);
 // 20.0855...
+```
+
+<br>
+<h2 id="equacoes">Equações:</h2>
+Todos parametros dessa seção são do tipo number.
+
+<br>
+<h3 id="equacoesSegundo">Equações do 2° grau:</h3>
+
+<br>
+Em números decimais
+
+```js
+mat.eqSegGrau(a, b, c);
+// ------------------------------------------------
+mat.eqSegGrau(1, -5, 6);
+// [ 3, 2 ]
+```
+
+Em frações
+
+```js
+mat.eqSegGrauFra(a, b, c);
+// ------------------------------------------------
+mat.eqSegGrauFra(1, -5, 6);
+// [ '6/2', '4/2' ]
 ```
