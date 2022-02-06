@@ -1,7 +1,7 @@
 <h1>MAT-PACKAGE</h1>
 
 <h2>Sumário:</h2>
-  <ol>
+   <ol>
     <a href="#descricao">
       <li>Descrição</li>
     </a>
@@ -71,6 +71,15 @@
             </a>
             <a href="#mediaPond">
               <li>Média ponderada</li>
+            </a>
+          </ul>
+        </li>
+      </a>
+      <a href="#conversor">
+        <li>Conversores
+          <ul style="list-style-type: disc;">
+            <a href="#conversorMedidas">
+              <li>Conversor de medidas</li>
             </a>
           </ul>
         </li>
@@ -440,4 +449,39 @@ const pesos = [ 1, 2, 1, 3 ];
 
 mat.mediaPonderada(notas, pesos);
 // 8.14
+```
+
+<br>
+<h2 id="conversor">Conversores:</h2>
+Todos parametros dessa seção são do tipo number.
+
+<br>
+<h3 id="conversorMedidas">Conversor de medidas:</h3>
+
+<br>
+Quilômetros
+
+```js
+mat.convKM(unidade, numero);
+// ------------------------------------------------
+mat.conKM("m", 10);
+// 10000
+```
+
+Metros
+
+```js
+mat.convM(unidade, numero);
+// ------------------------------------------------
+mat.convM("cm", 10);
+// 1000
+```
+
+Centímetros
+
+```js
+mat.convCM(unidade, numero);
+// ------------------------------------------------
+mat.convCM("m", 10);
+// 0.1
 ```
