@@ -1,17 +1,25 @@
-module.exports = {
-  soma: (n1: number, n2: number) => {
-    return n1 + n2;
-  },
+const CORRETOR = 1000000000000;
 
-  multiplicacao: (n1: number, n2: number) => {
-    return n1 * n2;
-  },
+export function soma(n1: number, n2: number) {
+  const result = (n1 * CORRETOR + n2 * CORRETOR) / CORRETOR;
 
-  divisao: (n1: number, n2: number) => {
-    return n1 / n2;
-  },
+  return result;
+}
 
-  subtracao: (n1: number, n2: number) => {
-    return n1 - n2;
-  },
-};
+export function multiplicacao(n1: number, n2: number) {
+  const result = (n1 * CORRETOR * n2 * CORRETOR) / (CORRETOR * CORRETOR);
+
+  return result;
+}
+
+export function divisao(n1: number, n2: number) {
+  const result = (n1 * CORRETOR) / (n2 * CORRETOR);
+
+  return result;
+}
+
+export function subtracao(n1: number, n2: number) {
+  const result = (n1 * CORRETOR - n2 * CORRETOR) / CORRETOR;
+
+  return result;
+}
