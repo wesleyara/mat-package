@@ -81,6 +81,9 @@
             <a href="#conversorMedidas">
               <li>Conversor de medidas</li>
             </a>
+            <a href="#conversorMoedas">
+              <li>Conversor de moedas</li>
+            </a>
           </ul>
         </li>
       </a>
@@ -485,3 +488,21 @@ mat.convCM(unidade, numero);
 mat.convCM("m", 10);
 // 0.1
 ```
+
+<br>
+<h3 id="conversorMoedas">Conversor de moedas:</h3>
+Utilizando uma API para captar em tempo real a cotação das moedas, essa função deve ser chamada dentro de uma função async await para que não retorne uma promise
+
+Todos os parâmetros dessa seção são do tipo string.
+
+<br>
+Utilizando com async e await
+
+```js
+async function test() {
+  console.log(await mat.conversorMoedas("dolar"));
+} // 5.266 (No momento do teste)
+
+test()
+```
+
