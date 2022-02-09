@@ -1,3 +1,4 @@
-const medidas = require("./Medidas/conversorMedidas");
+const medidas = require("./Medidas/index");
+const moedas = require("./Moedas/index");
 
-module.exports = { ...medidas };
+module.exports = { ...medidas, ...moedas };
