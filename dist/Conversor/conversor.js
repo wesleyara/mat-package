@@ -1,3 +1,4 @@
 "use strict";
-const medidas = require("./Medidas/conversorMedidas");
-module.exports = Object.assign({}, medidas);
+const medidas = require("./Medidas/index");
+const moedas = require("./Moedas/index");
+module.exports = Object.assign(Object.assign({}, medidas), moedas);
