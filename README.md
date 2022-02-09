@@ -506,3 +506,43 @@ async function test() {
 test()
 ```
 
+  <h3>Lista de moedas:</h3>
+  <ul>
+    <li>dolar</li>
+    <li>euro</li>
+    <li>dolarCanadense</li>
+    <li>guaraniParaguaio</li>
+    <li>pesoArgentino</li>
+    <li>pesoUruguaio</li>
+    <li>pesoColombiano</li>
+    <li>pesoMexicano</li>
+    <li>pesoChileno</li>
+    <li>libraEsterlina</li>
+    <li>coroaNorueguesa</li>
+    <li>bitcoin</li>
+    <li>dolarNeozelandes</li>
+    <li>francoSuico</li>
+    <li>etherium</li>
+    <li>coroaDinamarquesa</li>
+    <li>rubloRusso</li>
+    <li>yuanChines</li>
+    <li>rupiaIndiana</li>
+    <li>zlotiPolones</li>
+    <li>riyalSaudita</li>
+    <li>novaLiraTurca</li>
+    <li>dirhamDosEmirados</li>
+    <li>dolarHongKong</li>
+    <li>xrp</li>
+    <li>randSulAfricano</li>
+    <li>ieneJapones</li>
+    <li>novoShekelIsraelense</li>
+    <li>bahtTailandes</li>
+    <li>coroaSueca</li>
+    <li>solDoPeru</li>
+    <li>dolarCingapura</li>
+    <li>dogecoin</li>
+    <li>dolarTaiunes</li>
+    <li>litecoin</li>
+    <li>dolarAustraliano</li>
+    <li>boliviano</li>
+  </ul>
