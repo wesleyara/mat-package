@@ -23,6 +23,7 @@
     "eslint-plugin-prettier": "^4.0.0"
   },
   "dependencies": {
+    "class-validator": "^0.13.2",
     "node-fetch": "^2.6.7"
   }
 }
