@@ -1,4 +1,12 @@
+import { isNumber, isString } from "class-validator";
+
 export function convKM(unidade: string, numero: number) {
+  const isUnidade = isString(unidade);
+  const isNumero = isNumber(numero);
+
+  if (!isUnidade) return console.error("O parametro unidade é do tipo string");
+  if (!isNumero) return console.error("O parametro numero é do tipo number");
+
   if (unidade === "hm") {
     return numero * 10;
   } else if (unidade === "dam") {
