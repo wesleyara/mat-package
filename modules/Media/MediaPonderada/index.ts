@@ -1,9 +1,13 @@
+import { validatorMediaPonderada } from "../../Validator";
+
 export function mediaPonderada(array: number[], arrayPesos: number[]) {
   const mult: number[] = [];
   const tamanho = array.length;
   const tamanhoPesos = arrayPesos.length;
 
   if (tamanho == tamanhoPesos) {
+    validatorMediaPonderada(array, arrayPesos);
+
     for (let i = 0; i < array.length; i++) {
       mult.push(array[i] * arrayPesos[i]);
     }

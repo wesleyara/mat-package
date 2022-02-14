@@ -29,9 +29,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.conversorMoedas = void 0;
+const Validator_1 = require("../../Validator");
 const fetch = (url, init) => Promise.resolve().then(() => __importStar(require("node-fetch"))).then(({ default: fetch }) => fetch(url, init));
 function conversorMoedas(moeda) {
     return __awaiter(this, void 0, void 0, function* () {
+        (0, Validator_1.validatorConversorMoedas)(moeda);
         const API_URL = "https://economia.awesomeapi.com.br/last/GBP-BRL,NOK-BRL,BTC-BRL,NZD-BRL,CHF-BRL,ETH-BRL,DKK-BRL,COP-BRL,RUB-BRL,CNY-BRL,INR-BRL,MXN-BRL,PLN-BRL,EUR-BRL,SAR-BRL,TRY-BRL,PYG-BRL,AED-BRL,HKD-BRL,XRP-BRL,ZAR-BRL,CAD-BRL,JPY-BRL,ILS-BRL,USD-BRL,SEK-BRL,THB-BRL,PEN-BRL,SGD-BRL,DOGE-BRL,TWD-BRL,LTC-BRL,AUD-BRL,CLP-BRL,BOB-BRL,ARS-BRL,UYU-BRL";
         const result = yield fetch(API_URL);
         const data = yield result.json();
@@ -150,7 +152,7 @@ function conversorMoedas(moeda) {
             return data.UYUBRL.ask;
         }
         else {
-            return null;
+            throw "Informe uma moeda válida. Mais informações em https://github.com/wesleyara/mat-package";
         }
     });
 }

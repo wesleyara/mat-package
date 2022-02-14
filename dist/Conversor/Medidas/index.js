@@ -1,14 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.convCM = exports.convM = exports.convKM = void 0;
-const class_validator_1 = require("class-validator");
+const index_1 = require("../../Validator/index");
 function convKM(unidade, numero) {
-    const isUnidade = (0, class_validator_1.isString)(unidade);
-    const isNumero = (0, class_validator_1.isNumber)(numero);
-    if (!isUnidade)
-        return console.error("O parametro unidade é do tipo string");
-    if (!isNumero)
-        return console.error("O parametro numero é do tipo number");
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "hm") {
         return numero * 10;
     }
@@ -27,9 +22,13 @@ function convKM(unidade, numero) {
     else if (unidade === "mm") {
         return numero * 1000000;
     }
+    else {
+        throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
+    }
 }
 exports.convKM = convKM;
 function convM(unidade, numero) {
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "km") {
         return numero / 1000;
     }
@@ -48,9 +47,13 @@ function convM(unidade, numero) {
     else if (unidade === "mm") {
         return numero * 1000;
     }
+    else {
+        throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
+    }
 }
 exports.convM = convM;
 function convCM(unidade, numero) {
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "km") {
         return numero / 100000;
     }
@@ -68,6 +71,9 @@ function convCM(unidade, numero) {
     }
     else if (unidade === "mm") {
         return numero * 10;
+    }
+    else {
+        throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
     }
 }
 exports.convCM = convCM;

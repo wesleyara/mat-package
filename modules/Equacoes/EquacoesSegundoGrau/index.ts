@@ -1,4 +1,8 @@
+import { validatorEqSegGrau } from "../../Validator";
+
 export function eqSegGrau(a: number, b: number, c: number) {
+  validatorEqSegGrau(a, b, c);
+
   const delta = Math.pow(b, 2) - 4 * a * c;
 
   if (delta < 0) {
@@ -18,6 +22,8 @@ export function eqSegGrau(a: number, b: number, c: number) {
 }
 
 export function eqSegGrauFra(a: number, b: number, c: number) {
+  validatorEqSegGrau(a, b, c);
+
   const delta = Math.pow(b, 2) - 4 * a * c;
 
   if (delta < 0) {

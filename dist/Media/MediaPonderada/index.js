@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mediaPonderada = void 0;
+const Validator_1 = require("../../Validator");
 function mediaPonderada(array, arrayPesos) {
     const mult = [];
     const tamanho = array.length;
     const tamanhoPesos = arrayPesos.length;
     if (tamanho == tamanhoPesos) {
+        (0, Validator_1.validatorMediaPonderada)(array, arrayPesos);
         for (let i = 0; i < array.length; i++) {
             mult.push(array[i] * arrayPesos[i]);
         }

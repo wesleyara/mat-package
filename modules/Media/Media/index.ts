@@ -1,4 +1,8 @@
+import { validatorMedia } from "../../Validator";
+
 export function media(array: number[]) {
+  validatorMedia(array);
+
   let soma = 0;
   const tamanho = array.length;
 
