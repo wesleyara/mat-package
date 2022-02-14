@@ -489,6 +489,8 @@ mat.convCM("m", 10);
 // 0.1
 ```
 
+Parametros para conversão: km, hm, dam, m, dm, cm, mm.
+
 <br>
 <h3 id="conversorMoedas">Conversor de moedas:</h3>
 Utilizando uma API para captar em tempo real a cotação das moedas, essa função deve ser chamada dentro de uma função async await para que não retorne uma promise
