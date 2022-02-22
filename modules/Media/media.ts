@@ -1,4 +1,4 @@
-const media = require("./Media/index");
-const mediaPonderada = require("./MediaPonderada/index");
+const media = require("./Media");
+const mediaPonderada = require("./MediaPonderada");
 
 module.exports = { ...media, ...mediaPonderada };

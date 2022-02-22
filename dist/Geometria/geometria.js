@@ -1,4 +1,4 @@
 "use strict";
-const area = require("./Area/index");
-const perimetro = require("./Perimetro/index");
+const area = require("./Area");
+const perimetro = require("./Perimetro");
 module.exports = Object.assign(Object.assign({}, area), perimetro);

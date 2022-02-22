@@ -1,4 +1,4 @@
-const area = require("./Area/index");
-const perimetro = require("./Perimetro/index");
+const area = require("./Area");
+const perimetro = require("./Perimetro");
 
 module.exports = { ...area, ...perimetro };

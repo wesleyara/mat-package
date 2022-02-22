@@ -1,3 +1,3 @@
-const bhaskara = require("./EquacoesSegundoGrau/index");
+const bhaskara = require("./EquacoesSegundoGrau");
 
 module.exports = { ...bhaskara };

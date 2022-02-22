@@ -1,4 +1,4 @@
-const medidas = require("./Medidas/index");
-const moedas = require("./Moedas/index");
+const medidas = require("./Medidas");
+const moedas = require("./Moedas");
 
 module.exports = { ...medidas, ...moedas };
