@@ -1,3 +1,3 @@
 "use strict";
-const bhaskara = require("./equacoesSegundoGrau/index");
+const bhaskara = require("./EquacoesSegundoGrau/index");
 module.exports = Object.assign({}, bhaskara);
