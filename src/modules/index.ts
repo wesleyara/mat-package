@@ -5,7 +5,7 @@ const equacoes = require("./Equacoes");
 const media = require("./Media");
 const conversor = require("./Conversor");
 
-export = {
+export const mat = {
   ...conversor,
   ...operacoes,
   ...geometria,
