@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.eqSegGrauFra = exports.eqSegGrau = void 0;
 const Validator_1 = require("../../Validator");
-function eqSegGrau(a, b, c) {
-    (0, Validator_1.validatorEqSegGrau)(a, b, c);
+exports.eqSegGrau = (a, b, c) => {
+    Validator_1.validatorEqSegGrau(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
         return "A equação não possui resultados reais";
@@ -18,10 +18,9 @@ function eqSegGrau(a, b, c) {
         const result = [Number(x1), Number(x2)];
         return result;
     }
-}
-exports.eqSegGrau = eqSegGrau;
-function eqSegGrauFra(a, b, c) {
-    (0, Validator_1.validatorEqSegGrau)(a, b, c);
+};
+exports.eqSegGrauFra = (a, b, c) => {
+    Validator_1.validatorEqSegGrau(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
         return "A equação não possui resultados reais";
@@ -42,5 +41,4 @@ function eqSegGrauFra(a, b, c) {
         const result = [x1, x2];
         return result;
     }
-}
-exports.eqSegGrauFra = eqSegGrauFra;
+};

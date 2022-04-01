@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mediaPonderada = void 0;
 const Validator_1 = require("../../Validator");
-function mediaPonderada(array, arrayPesos) {
+exports.mediaPonderada = (array, arrayPesos) => {
     const mult = [];
     const tamanho = array.length;
     const tamanhoPesos = arrayPesos.length;
     if (tamanho == tamanhoPesos) {
-        (0, Validator_1.validatorMediaPonderada)(array, arrayPesos);
+        Validator_1.validatorMediaPonderada(array, arrayPesos);
         for (let i = 0; i < array.length; i++) {
             mult.push(array[i] * arrayPesos[i]);
         }
@@ -25,5 +25,4 @@ function mediaPonderada(array, arrayPesos) {
     else {
         return "Passe arrays com tamanhos iguais";
     }
-}
-exports.mediaPonderada = mediaPonderada;
+};
