@@ -112,8 +112,10 @@ Para utilizar este pacote, basta digitar o seguinte código no terminal dentro d
 
 <br>
 
-```
-npm install https://github.com/wesleyara/mat-package
+```sh
+npm install mat-package
+# ou
+yarn add mat-package
 ```
 
 <br>
@@ -146,7 +148,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 <h2 id="desenvolvedor" >Desenvolvedor</h2>
 
-| [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@Wesleyara</sub>](https://github.com/wesleyara)
+| [<img src="https://avatars.githubusercontent.com/u/89321125?v=4" width="115"><br><sub>@wesleyara</sub>](https://github.com/wesleyara)
 | --------------------------------------------------------------------------------------------------------------------------------------------- |
 
 <br>
