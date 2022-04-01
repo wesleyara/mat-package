@@ -1,13 +1,13 @@
 import { isNumber } from "class-validator";
 
-export const areaQuadrado = (lado: number) => {
+const areaQuadrado = (lado: number) => {
   const isN1 = isNumber(lado);
 
   if (!isN1) throw "O parametro lado é tipo number.";
   return lado * lado;
 }
 
-export const areaRetangulo = (lado: number, altura: number) => {
+const areaRetangulo = (lado: number, altura: number) => {
   const isN1 = isNumber(lado);
   const isN2 = isNumber(altura);
 
@@ -17,7 +17,7 @@ export const areaRetangulo = (lado: number, altura: number) => {
   return lado * altura;
 }
 
-export const areaTriangulo = (base: number, altura: number) => {
+const areaTriangulo = (base: number, altura: number) => {
   const isN1 = isNumber(base);
   const isN2 = isNumber(altura);
 
@@ -27,7 +27,7 @@ export const areaTriangulo = (base: number, altura: number) => {
   return (base * altura) / 2;
 }
 
-export const areaCirculo = (raio: number) => {
+const areaCirculo = (raio: number) => {
   const isN1 = isNumber(raio);
 
   if (!isN1) throw "O parametro raio é tipo number.";
@@ -35,7 +35,7 @@ export const areaCirculo = (raio: number) => {
   return Math.round(Math.PI * Math.pow(raio, 2));
 }
 
-export const areaParalelogramo = (base: number, altura: number) => {
+const areaParalelogramo = (base: number, altura: number) => {
   const isN1 = isNumber(base);
   const isN2 = isNumber(altura);
 
@@ -45,7 +45,7 @@ export const areaParalelogramo = (base: number, altura: number) => {
   return base * altura;
 }
 
-export const areaTrapezio = (
+const areaTrapezio = (
   baseMaior: number,
   baseMenor: number,
   altura: number,
@@ -60,3 +60,5 @@ export const areaTrapezio = (
 
   return ((baseMaior + baseMenor) / 2) * altura;
 }
+
+export = {areaCirculo, areaParalelogramo, areaQuadrado, areaRetangulo, areaTrapezio, areaTriangulo}

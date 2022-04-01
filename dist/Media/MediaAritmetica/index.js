@@ -1,8 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.mediaAritmetica = void 0;
 const Validator_1 = require("../../Validator");
-exports.mediaAritmetica = (array) => {
+const mediaAritmetica = (array) => {
     Validator_1.validatorMedia(array);
     let soma = 0;
     const tamanho = array.length;
@@ -12,3 +10,4 @@ exports.mediaAritmetica = (array) => {
     const result = Number((soma / tamanho).toFixed(2));
     return result;
 };
+module.exports = { mediaAritmetica };

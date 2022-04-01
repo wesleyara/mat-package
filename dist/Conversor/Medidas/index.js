@@ -1,8 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.convCM = exports.convM = exports.convKM = void 0;
 const index_1 = require("../../Validator/index");
-exports.convKM = (unidade, numero) => {
+const convKM = (unidade, numero) => {
     index_1.validatorConversorMedidas(unidade, numero);
     if (unidade === "hm") {
         return numero * 10;
@@ -26,7 +24,7 @@ exports.convKM = (unidade, numero) => {
         throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
     }
 };
-exports.convM = (unidade, numero) => {
+const convM = (unidade, numero) => {
     index_1.validatorConversorMedidas(unidade, numero);
     if (unidade === "km") {
         return numero / 1000;
@@ -50,7 +48,7 @@ exports.convM = (unidade, numero) => {
         throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
     }
 };
-exports.convCM = (unidade, numero) => {
+const convCM = (unidade, numero) => {
     index_1.validatorConversorMedidas(unidade, numero);
     if (unidade === "km") {
         return numero / 100000;
@@ -74,3 +72,4 @@ exports.convCM = (unidade, numero) => {
         throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
     }
 };
+module.exports = { convCM, convKM, convM };

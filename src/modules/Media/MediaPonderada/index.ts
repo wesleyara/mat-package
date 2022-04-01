@@ -1,6 +1,6 @@
 import { validatorMediaPonderada } from "../../Validator";
 
-export const mediaPonderada = (array: number[], arrayPesos: number[]) => {
+const mediaPonderada = (array: number[], arrayPesos: number[]) => {
   const mult: number[] = [];
   const tamanho = array.length;
   const tamanhoPesos = arrayPesos.length;
@@ -28,6 +28,8 @@ export const mediaPonderada = (array: number[], arrayPesos: number[]) => {
 
     return result;
   } else {
-    return "Passe arrays com tamanhos iguais";
+    throw new Error("Os arrays precisam ter o mesmo tamanho");
   }
-}
+};
+
+export = { mediaPonderada };

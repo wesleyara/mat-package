@@ -1,8 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.eqSegGrauFra = exports.eqSegGrau = void 0;
 const Validator_1 = require("../../Validator");
-exports.eqSegGrau = (a, b, c) => {
+const eqSegGrau = (a, b, c) => {
     Validator_1.validatorEqSegGrau(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
@@ -19,7 +17,7 @@ exports.eqSegGrau = (a, b, c) => {
         return result;
     }
 };
-exports.eqSegGrauFra = (a, b, c) => {
+const eqSegGrauFra = (a, b, c) => {
     Validator_1.validatorEqSegGrau(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
@@ -42,3 +40,4 @@ exports.eqSegGrauFra = (a, b, c) => {
         return result;
     }
 };
+module.exports = { eqSegGrau, eqSegGrauFra };

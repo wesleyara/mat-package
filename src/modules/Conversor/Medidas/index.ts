@@ -1,6 +1,6 @@
 import { validatorConversorMedidas } from "../../Validator/index";
 
-export const convKM = (unidade: string, numero: number) => {
+const convKM = (unidade: string, numero: number) => {
   validatorConversorMedidas(unidade, numero);
 
   if (unidade === "hm") {
@@ -20,7 +20,7 @@ export const convKM = (unidade: string, numero: number) => {
   }
 }
 
-export const convM = (unidade: string, numero: number) => {
+const convM = (unidade: string, numero: number) => {
   validatorConversorMedidas(unidade, numero);
 
   if (unidade === "km") {
@@ -40,7 +40,7 @@ export const convM = (unidade: string, numero: number) => {
   }
 }
 
-export const convCM = (unidade: string, numero: number) => {
+const convCM = (unidade: string, numero: number) => {
   validatorConversorMedidas(unidade, numero);
 
   if (unidade === "km") {
@@ -59,3 +59,5 @@ export const convCM = (unidade: string, numero: number) => {
     throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
 }
+
+export = {convCM, convKM, convM}

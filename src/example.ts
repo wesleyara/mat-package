@@ -1,3 +1,3 @@
-const mat = require("./modules");
+import mat from "./modules";
 
-console.log(mat.divisao(4, 2));
+console.log(mat);

@@ -1,6 +1,6 @@
 import { validatorMedia } from "../../Validator";
 
-export const mediaAritmetica = (array: number[]) => {
+const mediaAritmetica = (array: number[]) => {
   validatorMedia(array);
 
   let soma = 0;
@@ -13,4 +13,6 @@ export const mediaAritmetica = (array: number[]) => {
   const result = Number((soma / tamanho).toFixed(2));
 
   return result;
-}
+};
+
+export = { mediaAritmetica };

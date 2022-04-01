@@ -1,8 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.mediaPonderada = void 0;
 const Validator_1 = require("../../Validator");
-exports.mediaPonderada = (array, arrayPesos) => {
+const mediaPonderada = (array, arrayPesos) => {
     const mult = [];
     const tamanho = array.length;
     const tamanhoPesos = arrayPesos.length;
@@ -23,6 +21,7 @@ exports.mediaPonderada = (array, arrayPesos) => {
         return result;
     }
     else {
-        return "Passe arrays com tamanhos iguais";
+        throw new Error("Os arrays precisam ter o mesmo tamanho");
     }
 };
+module.exports = { mediaPonderada };

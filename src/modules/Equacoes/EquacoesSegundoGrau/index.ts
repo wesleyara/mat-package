@@ -1,6 +1,6 @@
 import { validatorEqSegGrau } from "../../Validator";
 
-export const eqSegGrau = (a: number, b: number, c: number) => {
+const eqSegGrau = (a: number, b: number, c: number) => {
   validatorEqSegGrau(a, b, c);
 
   const delta = Math.pow(b, 2) - 4 * a * c;
@@ -21,7 +21,7 @@ export const eqSegGrau = (a: number, b: number, c: number) => {
   }
 }
 
-export const eqSegGrauFra = (a: number, b: number, c: number) => {
+const eqSegGrauFra = (a: number, b: number, c: number) => {
   validatorEqSegGrau(a, b, c);
 
   const delta = Math.pow(b, 2) - 4 * a * c;
@@ -50,3 +50,5 @@ export const eqSegGrauFra = (a: number, b: number, c: number) => {
     return result;
   }
 }
+
+export = {eqSegGrau, eqSegGrauFra}
