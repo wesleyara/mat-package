@@ -19,7 +19,7 @@ const eqSegGrau = (a: number, b: number, c: number) => {
 
     return result;
   }
-}
+};
 
 const eqSegGrauFra = (a: number, b: number, c: number) => {
   validatorEqSegGrau(a, b, c);
@@ -49,6 +49,6 @@ const eqSegGrauFra = (a: number, b: number, c: number) => {
     const result = [x1, x2];
     return result;
   }
-}
+};
 
-export = {eqSegGrau, eqSegGrauFra}
+export = { eqSegGrau, eqSegGrauFra };

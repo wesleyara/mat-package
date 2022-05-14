@@ -1,7 +1,7 @@
 "use strict";
 const Validator_1 = require("../../Validator");
 const eqSegGrau = (a, b, c) => {
-    Validator_1.validatorEqSegGrau(a, b, c);
+    (0, Validator_1.validatorEqSegGrau)(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
         return "A equação não possui resultados reais";
@@ -18,7 +18,7 @@ const eqSegGrau = (a, b, c) => {
     }
 };
 const eqSegGrauFra = (a, b, c) => {
-    Validator_1.validatorEqSegGrau(a, b, c);
+    (0, Validator_1.validatorEqSegGrau)(a, b, c);
     const delta = Math.pow(b, 2) - 4 * a * c;
     if (delta < 0) {
         return "A equação não possui resultados reais";

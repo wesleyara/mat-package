@@ -21,7 +21,7 @@ interface FunctionTypes {
   areaTrapezio: (
     baseMaior: number,
     baseMenor: number,
-    altura: number
+    altura: number,
   ) => number;
   areaTriangulo: (base: number, altura: number) => number;
   perimetroCirculo: (raio: number) => number;
@@ -32,7 +32,7 @@ interface FunctionTypes {
     ladoA: number,
     ladoB: number,
     ladoC: number,
-    ladoD: number
+    ladoD: number,
   ) => number;
   perimetroTriangulo: (lado: number) => number;
   arredondar: (numero: number) => number;

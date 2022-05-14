@@ -18,7 +18,7 @@ const convKM = (unidade: string, numero: number) => {
   } else {
     throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
-}
+};
 
 const convM = (unidade: string, numero: number) => {
   validatorConversorMedidas(unidade, numero);
@@ -38,7 +38,7 @@ const convM = (unidade: string, numero: number) => {
   } else {
     throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
-}
+};
 
 const convCM = (unidade: string, numero: number) => {
   validatorConversorMedidas(unidade, numero);
@@ -58,6 +58,6 @@ const convCM = (unidade: string, numero: number) => {
   } else {
     throw "Informe uma unidade válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
-}
+};
 
-export = {convCM, convKM, convM}
+export = { convCM, convKM, convM };

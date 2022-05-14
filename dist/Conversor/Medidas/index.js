@@ -1,7 +1,7 @@
 "use strict";
 const index_1 = require("../../Validator/index");
 const convKM = (unidade, numero) => {
-    index_1.validatorConversorMedidas(unidade, numero);
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "hm") {
         return numero * 10;
     }
@@ -25,7 +25,7 @@ const convKM = (unidade, numero) => {
     }
 };
 const convM = (unidade, numero) => {
-    index_1.validatorConversorMedidas(unidade, numero);
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "km") {
         return numero / 1000;
     }
@@ -49,7 +49,7 @@ const convM = (unidade, numero) => {
     }
 };
 const convCM = (unidade, numero) => {
-    index_1.validatorConversorMedidas(unidade, numero);
+    (0, index_1.validatorConversorMedidas)(unidade, numero);
     if (unidade === "km") {
         return numero / 100000;
     }

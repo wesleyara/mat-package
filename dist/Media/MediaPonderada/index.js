@@ -5,7 +5,7 @@ const mediaPonderada = (array, arrayPesos) => {
     const tamanho = array.length;
     const tamanhoPesos = arrayPesos.length;
     if (tamanho == tamanhoPesos) {
-        Validator_1.validatorMediaPonderada(array, arrayPesos);
+        (0, Validator_1.validatorMediaPonderada)(array, arrayPesos);
         for (let i = 0; i < array.length; i++) {
             mult.push(array[i] * arrayPesos[i]);
         }

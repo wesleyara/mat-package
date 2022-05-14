@@ -48,7 +48,7 @@ const perimetroTrapezio = (
   ladoA: number,
   ladoB: number,
   ladoC: number,
-  ladoD: number
+  ladoD: number,
 ) => {
   const isLadoA = isNumber(ladoA);
   const isLadoB = isNumber(ladoB);
