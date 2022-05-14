@@ -127,7 +127,6 @@ Para utilizar o pacote no node.js:
 
 ```
 const mat = require("mat-package");
-mat.config();
 ```
 
 Para utilizar em projetos React:
