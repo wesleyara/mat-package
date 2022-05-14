@@ -1,11 +1,6 @@
-# NODE MODULES
 
-/node_modules
+*node_modules
 
-# ESlint
+package-lock.json
 
-.eslintrc.json
-
-# prettier
-
-.prettierrc.json
+yarn-error.log
