@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --verbose",
-    "build": "tsc --declaration",
+    "test": "vitest",
+    "build": "rimraf dist && tsc --declaration",
     "lint": "eslint src --fix"
   },
   "keywords": [
@@ -17,7 +17,6 @@
   "author": "Wesley Araújo",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^27.5.1",
     "@types/node": "^17.0.14",
     "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
@@ -25,7 +24,6 @@
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^28.1.0",
     "prettier": "^2.6.2",
     "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0",
@@ -33,6 +31,8 @@
   },
   "dependencies": {
     "class-validator": "^0.13.2",
-    "node-fetch": "^3.2.4"
+    "node-fetch": "^3.2.4",
+    "rimraf": "^3.0.2",
+    "vitest": "^0.24.3"
   }
 }
