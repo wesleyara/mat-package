@@ -1,6 +1,6 @@
 {
   "name": "mat-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pacote com funções para cálculos matemáticos.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
