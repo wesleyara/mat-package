@@ -1,4 +1,4 @@
-const mediaAritmetica = require("./MediaAritmetica");
-const mediaPonderada = require("./MediaPonderada");
+import mediaAritmetica from "./MediaAritmetica";
+import mediaPonderada from "./MediaPonderada";
 
 export = { ...mediaAritmetica, ...mediaPonderada };

@@ -1,9 +1,9 @@
-const operacoes = require("./Operacoes");
-const geometria = require("./Geometria");
-const math = require("./Math");
-const equacoes = require("./Equacoes");
-const media = require("./Media");
-const conversor = require("./Conversor");
+import operacoes from "./Operacoes";
+import geometria from "./Geometria";
+import math from "./Math";
+import equacoes from "./Equacoes";
+import media from "./Media";
+import conversor from "./Conversor";
 
 interface FunctionTypes {
   convCM: (unidade: string, numero: number) => number;

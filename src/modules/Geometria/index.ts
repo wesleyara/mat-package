@@ -1,4 +1,4 @@
-const area = require("./Area");
-const perimetro = require("./Perimetro");
+import area from "./Area";
+import perimetro from "./Perimetro";
 
 export = { ...area, ...perimetro };

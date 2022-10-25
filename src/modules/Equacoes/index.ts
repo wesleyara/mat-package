@@ -1,3 +1,3 @@
-const bhaskara = require("./EquacoesSegundoGrau");
+import bhaskara from "./EquacoesSegundoGrau";
 
 export = { ...bhaskara };

@@ -1,4 +1,4 @@
-const medidas = require("./Medidas");
-const moedas = require("./Moedas");
+import medidas from "./Medidas";
+import moedas from "./Moedas";
 
 export = { ...medidas, ...moedas };

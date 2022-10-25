@@ -5,7 +5,7 @@ import { validatorConversorMoedas } from "../../Validator";
 const fetch = (url: RequestInfo, init?: RequestInit) =>
   import("node-fetch").then(({ default: fetch }) => fetch(url, init));
 
-export async function conversorMoedas(moeda: string) {
+async function conversorMoedas(moeda: string) {
   validatorConversorMoedas(moeda);
 
   const API_URL =
@@ -96,3 +96,5 @@ export async function conversorMoedas(moeda: string) {
     throw "Informe uma moeda válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
 }
+
+export = { conversorMoedas };
