@@ -1,4 +1,2 @@
-import medidas from "./Medidas";
-import moedas from "./Moedas";
-
-export = { ...medidas, ...moedas };
+export * from "./Medidas";
+export * from "./Moedas";

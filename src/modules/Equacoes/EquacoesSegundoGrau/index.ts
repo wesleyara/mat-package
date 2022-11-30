@@ -1,13 +1,13 @@
 import { validatorEqSegGrau } from "../../Validator";
 
-const eqSegGrau = (a: number, b: number, c: number) => {
+export const eqSegGrau = (a: number, b: number, c: number) => {
   validatorEqSegGrau(a, b, c);
 
   const delta = Math.pow(b, 2) - 4 * a * c;
 
   if (delta < 0) {
     return "A equação não possui resultados reais";
-  } else if (delta == 0) {
+  } else if (delta === 0) {
     const x1 = ((-b + Math.sqrt(delta)) / (2 * a)).toFixed(2);
 
     return Number(x1);
@@ -21,14 +21,14 @@ const eqSegGrau = (a: number, b: number, c: number) => {
   }
 };
 
-const eqSegGrauFra = (a: number, b: number, c: number) => {
+export const eqSegGrauFra = (a: number, b: number, c: number) => {
   validatorEqSegGrau(a, b, c);
 
   const delta = Math.pow(b, 2) - 4 * a * c;
 
   if (delta < 0) {
     return "A equação não possui resultados reais";
-  } else if (delta == 0) {
+  } else if (delta === 0) {
     const x1Top = -b + Math.sqrt(delta);
     const x1Bottom = 2 * a;
 
@@ -50,5 +50,3 @@ const eqSegGrauFra = (a: number, b: number, c: number) => {
     return result;
   }
 };
-
-export = { eqSegGrau, eqSegGrauFra };

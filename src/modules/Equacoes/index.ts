@@ -1,3 +1,1 @@
-import bhaskara from "./EquacoesSegundoGrau";
-
-export = { ...bhaskara };
+export * from "./EquacoesSegundoGrau";

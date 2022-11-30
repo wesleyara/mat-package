@@ -1,4 +1,2 @@
-import mediaAritmetica from "./MediaAritmetica";
-import mediaPonderada from "./MediaPonderada";
-
-export = { ...mediaAritmetica, ...mediaPonderada };
+export * from "./MediaAritmetica";
+export * from "./MediaPonderada";

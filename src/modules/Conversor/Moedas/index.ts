@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { fetchRequest } from "utils-react";
+
 import { validatorConversorMoedas } from "../../Validator";
 
-async function conversorMoedas(moeda: string) {
+export const conversorMoedas = async (moeda: string) => {
   validatorConversorMoedas(moeda);
 
   const API_URL =
@@ -14,83 +15,81 @@ async function conversorMoedas(moeda: string) {
     return null;
   }
 
-  if (moeda == "dolar") {
+  if (moeda === "dolar") {
     return data.USDBRL.ask;
-  } else if (moeda == "libraEsterlina") {
+  } else if (moeda === "libraEsterlina") {
     return data.GBPBRL.ask;
-  } else if (moeda == "coroaNorueguesa") {
+  } else if (moeda === "coroaNorueguesa") {
     return data.NOKBRL.ask;
-  } else if (moeda == "bitcoin") {
+  } else if (moeda === "bitcoin") {
     return data.BTCBRL.ask * 1000;
-  } else if (moeda == "dolarNeozelandes") {
+  } else if (moeda === "dolarNeozelandes") {
     return data.NZDBRL.ask;
-  } else if (moeda == "francoSuico") {
+  } else if (moeda === "francoSuico") {
     return data.CHFBRL.ask;
-  } else if (moeda == "etherium") {
+  } else if (moeda === "etherium") {
     return data.ETHBRL.ask;
-  } else if (moeda == "coroaDinamarquesa") {
+  } else if (moeda === "coroaDinamarquesa") {
     return data.DKKBRL.ask;
-  } else if (moeda == "pesoColombiano") {
+  } else if (moeda === "pesoColombiano") {
     return data.COPBRL.ask;
-  } else if (moeda == "rubloRusso") {
+  } else if (moeda === "rubloRusso") {
     return data.RUBBRL.ask;
-  } else if (moeda == "yuanChines") {
+  } else if (moeda === "yuanChines") {
     return data.CNYBRL.ask;
-  } else if (moeda == "rupiaIndiana") {
+  } else if (moeda === "rupiaIndiana") {
     return data.INRBRL.ask;
-  } else if (moeda == "pesoMexicano") {
+  } else if (moeda === "pesoMexicano") {
     return data.MXNBRL.ask;
-  } else if (moeda == "zlotiPolones") {
+  } else if (moeda === "zlotiPolones") {
     return data.PLNBRL.ask;
-  } else if (moeda == "euro") {
+  } else if (moeda === "euro") {
     return data.EURBRL.ask;
-  } else if (moeda == "riyalSaudita") {
+  } else if (moeda === "riyalSaudita") {
     return data.SARBRL.ask;
-  } else if (moeda == "novaLiraTurca") {
+  } else if (moeda === "novaLiraTurca") {
     return data.TRYBRL.ask;
-  } else if (moeda == "guaraniParaguaio") {
+  } else if (moeda === "guaraniParaguaio") {
     return data.PYGBRL.ask;
-  } else if (moeda == "dirhamDosEmirados") {
+  } else if (moeda === "dirhamDosEmirados") {
     return data.AEDBRL.ask;
-  } else if (moeda == "dolarHongKong") {
+  } else if (moeda === "dolarHongKong") {
     return data.HKDBRL.ask;
-  } else if (moeda == "xrp") {
+  } else if (moeda === "xrp") {
     return data.XRPBRL.ask;
-  } else if (moeda == "randSulAfricano") {
+  } else if (moeda === "randSulAfricano") {
     return data.ZARBRL.ask;
-  } else if (moeda == "dolarCanadense") {
+  } else if (moeda === "dolarCanadense") {
     return data.CADBRL.ask;
-  } else if (moeda == "ieneJapones") {
+  } else if (moeda === "ieneJapones") {
     return data.JPYBRL.ask;
-  } else if (moeda == "novoShekelIsraelense") {
+  } else if (moeda === "novoShekelIsraelense") {
     return data.ILSBRL.ask;
-  } else if (moeda == "coroaSueca") {
+  } else if (moeda === "coroaSueca") {
     return data.SEKBRL.ask;
-  } else if (moeda == "bahtTailandes") {
+  } else if (moeda === "bahtTailandes") {
     return data.THBBRL.ask;
-  } else if (moeda == "solDoPeru") {
+  } else if (moeda === "solDoPeru") {
     return data.PENBRL.ask;
-  } else if (moeda == "dolarCingapura") {
+  } else if (moeda === "dolarCingapura") {
     return data.SGDBRL.ask;
-  } else if (moeda == "dogecoin") {
+  } else if (moeda === "dogecoin") {
     return data.DOGEBRL.ask;
-  } else if (moeda == "dolarTaiunes") {
+  } else if (moeda === "dolarTaiunes") {
     return data.TWDBRL.ask;
-  } else if (moeda == "litecoin") {
+  } else if (moeda === "litecoin") {
     return data.LTCBRL.ask;
-  } else if (moeda == "dolarAustraliano") {
+  } else if (moeda === "dolarAustraliano") {
     return data.AUDBRL.ask;
-  } else if (moeda == "pesoChileno") {
+  } else if (moeda === "pesoChileno") {
     return data.CLPBRL.ask;
-  } else if (moeda == "boliviano") {
+  } else if (moeda === "boliviano") {
     return data.BOBBRL.ask;
-  } else if (moeda == "pesoArgentino") {
+  } else if (moeda === "pesoArgentino") {
     return data.ARSBRL.ask;
-  } else if (moeda == "pesoUruguaio") {
+  } else if (moeda === "pesoUruguaio") {
     return data.UYUBRL.ask;
   } else {
     throw "Informe uma moeda válida. Mais informações em https://github.com/wesleyara/mat-package";
   }
-}
-
-export = { conversorMoedas };
+};

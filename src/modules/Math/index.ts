@@ -1,35 +1,36 @@
 import { isNumber } from "class-validator";
+
 import { validatorMath } from "../Validator";
 
-const numeroEuler = () => {
+export const numeroEuler = () => {
   return Math.E;
 };
 
-const exponencial = (numero: number) => {
+export const exponencial = (numero: number) => {
   validatorMath(numero);
 
   return Math.exp(numero);
 };
 
-const raizQuadrada = (numero: number) => {
+export const raizQuadrada = (numero: number) => {
   validatorMath(numero);
 
   return Math.sqrt(numero);
 };
 
-const modulo = (numero: number) => {
+export const modulo = (numero: number) => {
   validatorMath(numero);
 
   return Math.abs(numero);
 };
 
-const raizCubica = (numero: number) => {
+export const raizCubica = (numero: number) => {
   validatorMath(numero);
 
   return Math.cbrt(numero);
 };
 
-const potencia = (numero: number, expoente: number) => {
+export const potencia = (numero: number, expoente: number) => {
   const isNumero = isNumber(numero);
   const isExpoente = isNumber(expoente);
 
@@ -39,25 +40,14 @@ const potencia = (numero: number, expoente: number) => {
   return Math.pow(numero, expoente);
 };
 
-const numeroAleatorio = (valorMaximo: number) => {
+export const numeroAleatorio = (valorMaximo: number) => {
   validatorMath(valorMaximo);
 
   return Math.random() * (valorMaximo + 1);
 };
 
-const arredondar = (numero: number) => {
+export const arredondar = (numero: number) => {
   validatorMath(numero);
 
   return Math.round(numero);
-};
-
-export = {
-  arredondar,
-  numeroAleatorio,
-  potencia,
-  raizCubica,
-  modulo,
-  raizQuadrada,
-  exponencial,
-  numeroEuler,
 };
