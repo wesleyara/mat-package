@@ -1,3 +1,32 @@
+import { conversorMoedas, convCM, convKM, convM } from "./Conversor";
+import { eqSegGrau, eqSegGrauFra } from "./Equacoes";
+import {
+  areaCirculo,
+  areaParalelogramo,
+  areaQuadrado,
+  areaRetangulo,
+  areaTrapezio,
+  areaTriangulo,
+  perimetroCirculo,
+  perimetroParalelogramo,
+  perimetroQuadrado,
+  perimetroRetangulo,
+  perimetroTrapezio,
+  perimetroTriangulo,
+} from "./Geometria";
+import {
+  arredondar,
+  exponencial,
+  modulo,
+  numeroAleatorio,
+  numeroEuler,
+  potencia,
+  raizCubica,
+  raizQuadrada,
+} from "./Math";
+import { mediaAritmetica, mediaPonderada } from "./Media";
+import { divisao, multiplicacao, soma, subtracao } from "./Operacoes";
+
 export * from "./Operacoes";
 export * from "./Geometria";
 export * from "./Math";
@@ -5,56 +34,39 @@ export * from "./Equacoes";
 export * from "./Media";
 export * from "./Conversor";
 
-// interface FunctionTypes {
-//   convCM: (unidade: string, numero: number) => number;
-//   convKM: (unidade: string, numero: number) => number;
-//   convM: (unidade: string, numero: number) => number;
-//   conversorMoedas: (moeda: string) => Promise<any>;
-//   soma: (n1: number, n2: number) => number;
-//   subtracao: (n1: number, n2: number) => number;
-//   multiplicacao: (n1: number, n2: number) => number;
-//   divisao: (n1: number, n2: number) => number;
-//   areaCirculo: (raio: number) => number;
-//   areaParalelogramo: (base: number, altura: number) => number;
-//   areaQuadrado: (lado: number) => number;
-//   areaRetangulo: (lado: number, altura: number) => number;
-//   areaTrapezio: (
-//     baseMaior: number,
-//     baseMenor: number,
-//     altura: number,
-//   ) => number;
-//   areaTriangulo: (base: number, altura: number) => number;
-//   perimetroCirculo: (raio: number) => number;
-//   perimetroParalelogramo: (ladoMenor: number, ladoMaior: number) => number;
-//   perimetroQuadrado: (lado: number) => number;
-//   perimetroRetangulo: (lado: number, altura: number) => number;
-//   perimetroTrapezio: (
-//     ladoA: number,
-//     ladoB: number,
-//     ladoC: number,
-//     ladoD: number,
-//   ) => number;
-//   perimetroTriangulo: (lado: number) => number;
-//   arredondar: (numero: number) => number;
-//   numeroAleatorio: (valorMaximo: number) => number;
-//   potencia: (numero: number, expoente: number) => number;
-//   raizCubica: (numero: number) => number;
-//   modulo: (numero: number) => number;
-//   raizQuadrada: (numero: number) => number;
-//   exponencial: (numero: number) => number;
-//   numeroEuler: () => number;
-//   eqSegGrau: (a: number, b: number, c: number) => number[];
-//   eqSegGrauFra: (a: number, b: number, c: number) => string[];
-//   mediaAritmetica: (array: number[]) => number;
-//   mediaPonderada: (array: number[], arrayPesos: number[]) => number;
-// }
+const mat = {
+  soma,
+  subtracao,
+  divisao,
+  multiplicacao,
+  areaCirculo,
+  areaParalelogramo,
+  areaQuadrado,
+  areaRetangulo,
+  areaTrapezio,
+  areaTriangulo,
+  perimetroCirculo,
+  perimetroParalelogramo,
+  perimetroQuadrado,
+  perimetroRetangulo,
+  perimetroTrapezio,
+  perimetroTriangulo,
+  arredondar,
+  exponencial,
+  modulo,
+  numeroAleatorio,
+  numeroEuler,
+  potencia,
+  raizCubica,
+  raizQuadrada,
+  eqSegGrau,
+  eqSegGrauFra,
+  mediaAritmetica,
+  mediaPonderada,
+  conversorMoedas,
+  convCM,
+  convKM,
+  convM,
+};
 
-// export = {
-//   ...conversor,
-//   ...operacoes,
-//   ...geometria,
-//   ...math,
-//   ...equacoes,
-//   ...media,
-//   ...conversor,
-// } as FunctionTypes;
+export default mat;

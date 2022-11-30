@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
-    "dev": "ts-node src/index.ts",
+    "dev": "ts-node src/example.ts",
     "build": "rimraf lib && tsc --declaration",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
