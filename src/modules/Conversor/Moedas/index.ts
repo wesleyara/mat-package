@@ -1,9 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { RequestInfo, RequestInit } from "node-fetch";
+import { fetchRequest } from "utils-react";
 import { validatorConversorMoedas } from "../../Validator";
-
-const fetch = (url: RequestInfo, init?: RequestInit) =>
-  import("node-fetch").then(({ default: fetch }) => fetch(url, init));
 
 async function conversorMoedas(moeda: string) {
   validatorConversorMoedas(moeda);
@@ -11,8 +8,7 @@ async function conversorMoedas(moeda: string) {
   const API_URL =
     "https://economia.awesomeapi.com.br/last/GBP-BRL,NOK-BRL,BTC-BRL,NZD-BRL,CHF-BRL,ETH-BRL,DKK-BRL,COP-BRL,RUB-BRL,CNY-BRL,INR-BRL,MXN-BRL,PLN-BRL,EUR-BRL,SAR-BRL,TRY-BRL,PYG-BRL,AED-BRL,HKD-BRL,XRP-BRL,ZAR-BRL,CAD-BRL,JPY-BRL,ILS-BRL,USD-BRL,SEK-BRL,THB-BRL,PEN-BRL,SGD-BRL,DOGE-BRL,TWD-BRL,LTC-BRL,AUD-BRL,CLP-BRL,BOB-BRL,ARS-BRL,UYU-BRL";
 
-  const result = await fetch(API_URL);
-  const data = (await result.json()) as any;
+  const data = await fetchRequest(API_URL);
 
   if (typeof moeda !== "string") {
     return null;
