@@ -1,3 +1,3 @@
-import mat from "./modules";
+import { areaCirculo } from "./modules";
 
-console.log(mat);
+console.log(areaCirculo(10));
