@@ -436,7 +436,7 @@ Nesta seção iremos utilizar arrays como parametros, é válido ressaltar que m
 Utilize arrays como parametros
 
 ```js
-const notas = [ 10, 8, 7, 8 ];
+const notas = [10, 8, 7, 8];
 
 mat.media(notas);
 // 8.25
@@ -448,8 +448,8 @@ mat.media(notas);
 Utilize arrays como parametros
 
 ```js
-const notas = [ 10, 8, 7, 8 ];
-const pesos = [ 1, 2, 1, 3 ];
+const notas = [10, 8, 7, 8];
+const pesos = [1, 2, 1, 3];
 
 mat.mediaPonderada(notas, pesos);
 // 8.14
@@ -506,7 +506,7 @@ async function test() {
   console.log(await mat.conversorMoedas("dolar"));
 } // 5.266 (No momento do teste)
 
-test()
+test();
 ```
 
   <h3>Lista de moedas:</h3>
